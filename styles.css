@@ -912,3 +912,67 @@ hr {
 
 .roadmap-banner h3 { margin-bottom: 6px; font-size: clamp(16px, 4vw, 20px); }
 .roadmap-banner p  { font-size: 14px; color: var(--text-muted); margin: 0 0 16px; }
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════ */
+.site-footer {
+    width: 100%;
+    max-width: 860px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+}
+
+.footer-logo-name {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 16px;
+    margin-bottom: 14px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-copy {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.footer-copy a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.footer-copy a:hover { color: var(--accent); }
