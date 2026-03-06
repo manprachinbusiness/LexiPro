@@ -1,0 +1,118 @@
+:root {
+    --bg: #0A0A0F;
+    --surface: #12121A;
+    --border: #1E1E2E;
+    --accent: #7C6EFA;
+    --text-primary: #F0EEF8;
+    --text-secondary: #A8A3C0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif, Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-l {
+    font-family: Georgia, serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.logo-text {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.tab-btn.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+}
+
+/* Content Sections */
+.content-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 800px;
+    width: 100%;
+    display: none;
+}
+
+.content-card.active {
+    display: block;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: var(--accent);
+    margin-top: 0;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+ul {
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 20px 0;
+}
