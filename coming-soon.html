@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Coming | LexiPro</title>
+    <meta name="description" content="See what's next for LexiPro — Android support, spaced repetition, AI-powered word generation, streaks, badges and more.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+    <div class="logo-container">
+        <img src="images/icon.png" alt="LexiPro Logo" class="logo-img">
+        <div class="logo-tagline">Master the Language of Your Profession</div>
+    </div>
+
+    <button class="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="nav-toggle-label">
+            <span class="nav-current-page">What's Coming</span>
+        </span>
+        <span class="burger-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <nav class="tabs" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html"       class="tab-btn"        onclick="closeNav()">Home</a>
+        <a href="coming-soon.html" class="tab-btn active"  onclick="closeNav()">What's Coming</a>
+        <a href="support.html"     class="tab-btn"         onclick="closeNav()">Support</a>
+        <a href="privacy.html"     class="tab-btn"         onclick="closeNav()">Privacy Policy</a>
+        <a href="terms.html"       class="tab-btn"         onclick="closeNav()">Terms (EULA)</a>
+    </nav>
+
+    <div class="content-card">
+        <h2>The Roadmap</h2>
+        <p>LexiPro launched with a focused core — 5 daily words, swipe-to-review, and a growing personal word repository. Here's what we're building next to make it the definitive vocabulary tool for professionals.</p>
+
+        <!-- COMING SOON -->
+        <div class="roadmap-phase">
+            <div class="phase-label phase-soon">🚀 Coming Soon</div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🔁</span>
+                    <div class="roadmap-title">Spaced Repetition</div>
+                    <p class="roadmap-desc">Words you marked "Still Learning" will resurface at the optimal moment. A proven algorithm — the same science behind Anki and Duolingo.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🏆</span>
+                    <div class="roadmap-title">Streaks & Badges</div>
+                    <p class="roadmap-desc">Streak freezes, milestone badges, and your longest-ever streak record. Because consistency deserves recognition.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🔊</span>
+                    <div class="roadmap-title">Premium Pronunciation</div>
+                    <p class="roadmap-desc">Google-quality text-to-speech for every word — hear exactly how professionals pronounce the terms you're learning, every time.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🎮</span>
+                    <div class="roadmap-title">Weekly Word Games</div>
+                    <p class="roadmap-desc">Put your library to the test every week. Flashcard speed rounds, definition match, fill-in-the-blank, and more — learning that actually feels like play.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ON THE HORIZON -->
+        <div class="roadmap-phase">
+            <div class="phase-label phase-horizon">🌅 On the Horizon</div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🤖</span>
+                    <div class="roadmap-title">Smarter AI Curation</div>
+                    <p class="roadmap-desc">Our Claude-powered word pipeline will expand coverage into niche specialisations — Patent Law, Quantum Computing, Biotech, and more.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">📱</span>
+                    <div class="roadmap-title">Android App</div>
+                    <p class="roadmap-desc">LexiPro is currently iOS-only. Android is next. The same daily vocabulary experience, available on Google Play.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">⌚</span>
+                    <div class="roadmap-title">Apple Watch Widget</div>
+                    <p class="roadmap-desc">Your word of the day on your wrist. A quick glance during your commute or between meetings — vocabulary that fits your life.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">✍️</span>
+                    <div class="roadmap-title">Add Your Own Words</div>
+                    <p class="roadmap-desc">Heard a term in a meeting you didn't know? Add it to your personal library. LexiPro fetches the definition, pronunciation, and context automatically — then weaves it into your daily review.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">📶</span>
+                    <div class="roadmap-title">Offline Library</div>
+                    <p class="roadmap-desc">Your full word library available without a signal. Review on a plane, the tube, or anywhere you're off the grid — your learning never has to wait for Wi-Fi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FURTHER OUT -->
+        <div class="roadmap-phase">
+            <div class="phase-label phase-future">💡 Further Out</div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">👥</span>
+                    <div class="roadmap-title">Industry Groups</div>
+                    <p class="roadmap-desc">Connect with professionals in your field. See which words your peers are mastering and share vocabulary milestones.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">📊</span>
+                    <div class="roadmap-title">Deeper Progress Insights</div>
+                    <p class="roadmap-desc">Vocabulary growth charts, estimated reading level improvements, and communication confidence scores over time.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-icon">🤝</span>
+                    <div class="roadmap-title">Social & Peer Connect</div>
+                    <p class="roadmap-desc">Follow colleagues, challenge peers to weekly word duels, and celebrate shared milestones. Turn your team's vocabulary into a competitive edge.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA BANNER -->
+        <div class="roadmap-banner">
+            <h3>Shape What We Build Next</h3>
+            <p>Have a feature in mind? We read every message. Tell us what would make LexiPro indispensable for your career.</p>
+            <a href="support.html" class="cta-button">Send Us Your Ideas</a>
+        </div>
+    </div>
+
+</div><!-- /page-wrapper -->
+<script src="script.js"></script>
+</body>
+</html>

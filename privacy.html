@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | LexiPro</title>
+    <meta name="description" content="LexiPro Privacy Policy — how we collect, use, and protect your data.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+    <div class="logo-container">
+        <img src="images/icon.png" alt="LexiPro Logo" class="logo-img">
+        <div class="logo-tagline">Master the Language of Your Profession</div>
+    </div>
+
+    <button class="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="nav-toggle-label">
+            <span class="nav-current-page">Privacy Policy</span>
+        </span>
+        <span class="burger-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <nav class="tabs" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html"       class="tab-btn"        onclick="closeNav()">Home</a>
+        <a href="coming-soon.html" class="tab-btn"         onclick="closeNav()">What's Coming</a>
+        <a href="support.html"     class="tab-btn"         onclick="closeNav()">Support</a>
+        <a href="privacy.html"     class="tab-btn active"  onclick="closeNav()">Privacy Policy</a>
+        <a href="terms.html"       class="tab-btn"         onclick="closeNav()">Terms (EULA)</a>
+    </nav>
+
+    <div class="content-card">
+        <h2>Privacy Policy</h2>
+        <div class="date">Last Updated: March 6, 2026</div>
+
+        <p>LexiPro ("we," "our," or "us") is committed to protecting your privacy. This policy explains how we handle your data within the LexiPro mobile application.</p>
+
+        <h3>1. Information We Collect</h3>
+        <ul>
+            <li><strong>Account Data:</strong> Name and email address if provided during registration.</li>
+            <li><strong>Professional Profile:</strong> Your industry and seniority level to curate word lists.</li>
+            <li><strong>Learning Progress:</strong> Interaction data, streaks, and word mastery status.</li>
+            <li><strong>Purchase History:</strong> Managed via RevenueCat. We do not store credit card info.</li>
+        </ul>
+
+        <h3>2. AI Disclosure</h3>
+        <p>We use AI to curate vocabulary. Your professional profile is processed to generate relevant content, but your personal identity is never sold to third-party AI trainers.</p>
+
+        <h3>3. Data Retention</h3>
+        <p>You may delete your account and all associated data at any time via the Settings menu in the app.</p>
+
+        <p>For inquiries: <strong>manprachinbusiness@gmail.com</strong></p>
+    </div>
+
+</div><!-- /page-wrapper -->
+<script src="script.js"></script>
+</body>
+</html>

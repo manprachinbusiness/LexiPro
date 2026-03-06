@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | LexiPro</title>
+    <meta name="description" content="Get help with LexiPro or send us feedback. We'd love to hear from you.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+    <div class="logo-container">
+        <img src="images/icon.png" alt="LexiPro Logo" class="logo-img">
+        <div class="logo-tagline">Master the Language of Your Profession</div>
+    </div>
+
+    <button class="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="nav-toggle-label">
+            <span class="nav-current-page">Support</span>
+        </span>
+        <span class="burger-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <nav class="tabs" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html"       class="tab-btn"        onclick="closeNav()">Home</a>
+        <a href="coming-soon.html" class="tab-btn"         onclick="closeNav()">What's Coming</a>
+        <a href="support.html"     class="tab-btn active"  onclick="closeNav()">Support</a>
+        <a href="privacy.html"     class="tab-btn"         onclick="closeNav()">Privacy Policy</a>
+        <a href="terms.html"       class="tab-btn"         onclick="closeNav()">Terms (EULA)</a>
+    </nav>
+
+    <div class="content-card">
+        <h2>Support & Contact</h2>
+        <p>Need help with your subscription or have a question about our word lists?</p>
+        <p>Email: <strong>manprachinbusiness@gmail.com</strong></p>
+
+        <hr>
+
+        <h3>Send Us Feedback</h3>
+        <p>Help us build the best tool for your career. Share your suggestions below.</p>
+
+        <div id="feedback-form-wrap">
+            <div class="form-group">
+                <label class="form-label" for="feedback-name">Your Name</label>
+                <input class="form-input" type="text" id="feedback-name" placeholder="Jane Smith" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="feedback-email">Your Email</label>
+                <input class="form-input" type="email" id="feedback-email" placeholder="jane@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="feedback-subject">Subject</label>
+                <select class="form-input" id="feedback-subject">
+                    <option value="General Feedback">General Feedback</option>
+                    <option value="Bug Report">Bug Report</option>
+                    <option value="Feature Request">Feature Request</option>
+                    <option value="Subscription Issue">Subscription Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="feedback-message">Message</label>
+                <textarea class="form-input form-textarea" id="feedback-message" placeholder="Tell us what you think..." required></textarea>
+            </div>
+            <div id="form-error" class="form-error" style="display:none;">Please fill in all required fields.</div>
+            <button class="cta-button" id="feedback-submit" onclick="submitFeedback()">Send Feedback</button>
+        </div>
+
+        <div id="feedback-success" class="feedback-success" style="display:none;">
+            <div class="success-icon">&#10003;</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for your feedback. We'll get back to you at the email you provided.</p>
+        </div>
+    </div>
+
+</div><!-- /page-wrapper -->
+<script src="script.js"></script>
+</body>
+</html>

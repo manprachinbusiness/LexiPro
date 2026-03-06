@@ -3,59 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LexiPro | Professional Vocabulary</title>
+    <title>LexiPro | Master the Language of Your Profession</title>
+    <meta name="description" content="LexiPro — The premium vocabulary builder for high-performers. 5 AI-curated words daily, tailored to your career.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="page-wrapper">
 
     <div class="logo-container">
-        <div class="logo-l">L</div>
-        <div class="logo-text">LEXIPRO</div>
+        <img src="images/icon.png" alt="LexiPro Logo" class="logo-img">
+        <div class="logo-tagline">Master the Language of Your Profession</div>
     </div>
 
-    <div class="tabs">
-        <button class="tab-btn active" onclick="showTab('intro')">Introduction</button>
-        <button class="tab-btn" onclick="showTab('privacy')">Privacy</button>
-        <button class="tab-btn" onclick="showTab('contact')">Contact & Feedback</button>
-        <button class="tab-btn" onclick="showTab('future')">Future</button>
-    </div>
+    <!-- Mobile burger toggle -->
+    <button class="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="nav-toggle-label">
+            <span class="nav-current-page">Home</span>
+        </span>
+        <span class="burger-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+    </button>
 
-    <div id="intro" class="content-card active">
-        <h2>Master Your Profession</h2>
-        <p>LexiPro delivers 5 AI-curated words daily, tailored specifically to your industry and experience level. Elevate your communication from day one.</p>
+    <nav class="tabs" id="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html"       class="tab-btn active" onclick="closeNav()">Home</a>
+        <a href="coming-soon.html" class="tab-btn"        onclick="closeNav()">What's Coming</a>
+        <a href="support.html"     class="tab-btn"        onclick="closeNav()">Support</a>
+        <a href="privacy.html"     class="tab-btn"        onclick="closeNav()">Privacy Policy</a>
+        <a href="terms.html"       class="tab-btn"        onclick="closeNav()">Terms (EULA)</a>
+    </nav>
+
+    <div class="content-card">
+        <h2>Professional Vocabulary, Curated by AI.</h2>
+        <p>LexiPro is the premium vocabulary builder for high-performers. Receive 5 AI-curated words daily, specifically chosen for your career path and seniority level.</p>
         <ul>
-            <li>Swipe-based learning</li>
-            <li>Spaced repetition system</li>
-            <li>Professional audio pronunciations</li>
+            <li><strong>Tailored to You:</strong> Junior developers get different sets than Senior Partners.</li>
+            <li><strong>Retention-Focused:</strong> Spaced repetition ensures you never forget.</li>
+            <li><strong>Premium Audio:</strong> Hear the correct pronunciation for every word.</li>
         </ul>
-        <a href="#" class="cta-button">Download on App Store</a>
-    </div>
 
-    <div id="privacy" class="content-card">
-        <h2>Privacy Policy</h2>
-        <p>Effective Date: March 6, 2026</p>
-        <p>We value your privacy. LexiPro collects minimal data (Email, Profession, and Learning Progress) to provide a personalized experience. We do not sell your data to third parties.</p>
+        <!-- ── SAMPLE WORD CARD ── -->
+        <div class="section-divider"><span>Try a Sample Card</span></div>
+        <p class="section-hint">This is exactly what you see inside the app every morning. Tap the card to reveal the definition.</p>
+
+        <div class="card-carousel">
+            <div class="word-card" id="wordCard" onclick="flipCard()">
+                <div class="card-inner" id="cardInner">
+                    <div class="card-face card-front">
+                        <div class="card-badge">Software Engineering · Mid Career</div>
+                        <div class="card-word">idempotent</div>
+                        <div class="card-pronunciation">/ˌaɪdəmˈpoʊtənt/</div>
+                        <div class="card-pos">adjective</div>
+                        <div class="card-tap-hint">Tap to reveal definition →</div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-definition">Denoting an operation that produces the same result regardless of how many times it is executed.</div>
+                        <div class="card-example">
+                            <span class="example-label">Example</span>
+                            "Making the same API request multiple times should be idempotent — the second call produces the same state as the first."
+                        </div>
+                        <div class="card-context">
+                            <span class="context-label">💡 Context</span>
+                            Critical in distributed systems and RESTful API design, especially for PUT and DELETE operations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions" id="cardActions" style="display:none;">
+                <button class="swipe-btn swipe-learn" onclick="swipeCard('learn')"><span>📚</span> Still Learning</button>
+                <button class="swipe-btn swipe-know"  onclick="swipeCard('know')"><span>✅</span> I Know This</button>
+            </div>
+            <div class="swipe-reaction" id="swipeReaction" style="display:none;"></div>
         </div>
 
-    <div id="contact" class="content-card">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? We'd love to hear from you.</p>
-        <p>Email: <strong>support@manprachin.com</strong></p>
-        <hr class="divider">
-        <h2>Feedback Form</h2>
-        <p>Since this is a static page, we recommend using a <strong>Google Form</strong> or <strong>Typeform</strong> link here:</p>
-        <a href="YOUR_GOOGLE_FORM_URL" class="cta-button">Open Feedback Form</a>
+        <!-- ── 5-DAY JOURNEY ── -->
+        <div class="section-divider"><span>5 Days in the Life</span></div>
+        <p class="section-hint">Meet Sarah — Software Engineer, Mid-Career. Here's what one week with LexiPro looks like.</p>
+
+        <div class="journey-strip">
+            <div class="journey-day">
+                <div class="day-header"><span class="day-label">Day 1</span><span class="day-streak">🔥 1</span></div>
+                <div class="day-words">
+                    <span class="word-pill known">idempotent</span>
+                    <span class="word-pill learning">memoization</span>
+                    <span class="word-pill learning">eventual consistency</span>
+                    <span class="word-pill known">containerization</span>
+                    <span class="word-pill known">polymorphism</span>
+                </div>
+                <div class="day-stat">3 known · 2 learning · 4 min</div>
+            </div>
+            <div class="journey-connector">▸</div>
+            <div class="journey-day">
+                <div class="day-header"><span class="day-label">Day 2</span><span class="day-streak">🔥 2</span></div>
+                <div class="day-words">
+                    <span class="word-pill learning">concurrency</span>
+                    <span class="word-pill known">decomposition</span>
+                    <span class="word-pill known">latency</span>
+                    <span class="word-pill learning">orthogonal</span>
+                    <span class="word-pill known">refactoring</span>
+                </div>
+                <div class="day-stat">3 known · 2 learning · 4 min</div>
+            </div>
+            <div class="journey-connector">▸</div>
+            <div class="journey-day">
+                <div class="day-header"><span class="day-label">Day 3</span><span class="day-streak">🔥 3</span></div>
+                <div class="day-words">
+                    <span class="word-pill learning">heuristic</span>
+                    <span class="word-pill known">serialization</span>
+                    <span class="word-pill known">immutability</span>
+                    <span class="word-pill known">abstraction</span>
+                    <span class="word-pill known">asynchronous</span>
+                </div>
+                <div class="day-stat">4 known · 1 learning · 4 min</div>
+            </div>
+            <div class="journey-connector">▸</div>
+            <div class="journey-day">
+                <div class="day-header"><span class="day-label">Day 4</span><span class="day-streak">🔥 4</span></div>
+                <div class="day-words">
+                    <span class="word-pill known">encapsulation</span>
+                    <span class="word-pill learning">idiomatic</span>
+                    <span class="word-pill known">deprecation</span>
+                    <span class="word-pill known">middleware</span>
+                    <span class="word-pill known">scalability</span>
+                </div>
+                <div class="day-stat">4 known · 1 learning · 4 min</div>
+            </div>
+            <div class="journey-connector">▸</div>
+            <div class="journey-day journey-day-final">
+                <div class="day-header"><span class="day-label">Day 5</span><span class="day-streak">🔥 5</span></div>
+                <div class="day-words">
+                    <span class="word-pill learning">observability</span>
+                    <span class="word-pill known">dependency injection</span>
+                    <span class="word-pill known">deterministic</span>
+                    <span class="word-pill learning">circuit breaker</span>
+                    <span class="word-pill known">throughput</span>
+                </div>
+                <div class="day-stat">3 known · 2 learning · 4 min</div>
+            </div>
+        </div>
+
+        <!-- ── WEEK SUMMARY ── -->
+        <div class="week-summary">
+            <div class="summary-title">Sarah's Week 1 — In 20 Minutes Total</div>
+            <div class="summary-stats">
+                <div class="stat-box"><div class="stat-num">25</div><div class="stat-lbl">Words Reviewed</div></div>
+                <div class="stat-box"><div class="stat-num">17</div><div class="stat-lbl">Marked Known</div></div>
+                <div class="stat-box"><div class="stat-num">68%</div><div class="stat-lbl">Mastery Rate</div></div>
+                <div class="stat-box stat-box-highlight"><div class="stat-num">🔥 5</div><div class="stat-lbl">Day Streak</div></div>
+            </div>
+            <div class="summary-quote">"In just 5 days, Sarah gained vocabulary that senior engineers use in system design discussions — words that signal expertise and elevate her communication."</div>
+        </div>
+
+        <div class="app-preview">
+            <img src="images/splash-icon.png" alt="LexiPro App Preview" class="splash-img">
+        </div>
+        <a href="#" class="cta-button" onclick="return false;">Coming Soon to the App Store</a>
     </div>
 
-    <div id="future" class="content-card">
-        <h2>Upcoming Enhancements</h2>
-        <ul>
-            <li><strong>AI Conversation Partner:</strong> Practice your new vocabulary in simulated real-world scenarios.</li>
-            <li><strong>Team Plans:</strong> Specialized vocabulary sets for entire law firms or engineering departments.</li>
-            <li><strong>Offline Mode:</strong> Learn on the go without an internet connection.</li>
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
+</div><!-- /page-wrapper -->
+<script src="script.js"></script>
 </body>
 </html>
