@@ -64,7 +64,6 @@ function swipeCard(choice) {
 /**
  * Feedback Form Submission
  * Submits feedback via Formspree and shows a success message on completion.
- * SETUP: Replace 'YOUR_FORMSPREE_ID' below with your actual Formspree form ID.
  */
 async function submitFeedback() {
     const name    = document.getElementById('feedback-name').value.trim();
@@ -84,7 +83,7 @@ async function submitFeedback() {
     btn.textContent = 'Sending...';
 
     try {
-        const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        const response = await fetch('https://formspree.io/f/xlgpovap', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, subject, message })
