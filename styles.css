@@ -294,7 +294,24 @@ hr {
     margin: 20px 0;
 }
 
-.external-link { color: var(--accent); }
+/* Inline links within content — override browser default colours */
+.content-card a,
+.external-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s;
+}
+
+.content-card a:visited,
+.external-link:visited {
+    color: var(--accent);
+}
+
+.content-card a:hover,
+.external-link:hover {
+    opacity: 0.8;
+}
 
 /* ═══════════════════════════════════════════════════════════
    CTA BUTTON
