@@ -311,7 +311,7 @@ hr {
    CTA BUTTON
 ═══════════════════════════════════════════════════════════ */
 .cta-button {
-    display: inline-block;
+    display: block;
     background: var(--accent);
     color: #0A0A0F;
     padding: 14px 28px;
@@ -320,7 +320,7 @@ hr {
     font-weight: 700;
     font-family: inherit;
     font-size: 15px;
-    margin-top: 16px;
+    margin: 16px auto 0;
     border: none;
     cursor: pointer;
     transition: opacity 0.2s;
@@ -328,19 +328,12 @@ hr {
     min-height: 48px;
     line-height: 1.2;
     vertical-align: middle;
+    text-align: center;
+    width: fit-content;
 }
 
 .cta-button:hover   { opacity: 0.9; }
 .cta-button:active  { opacity: 0.75; }
-
-/* Full-width on small screens */
-@media (max-width: 480px) {
-    .cta-button {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-}
 
 /* ═══════════════════════════════════════════════════════════
    APP PREVIEW IMAGE
