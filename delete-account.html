@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account | LexiPro</title>
+    <meta name="description" content="How to delete your LexiPro account and all associated data.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <div class="logo-container">
+            <img src="images/icon.png" alt="LexiPro Logo" class="logo-img">
+            <div class="logo-tagline">Master the Language of Your Profession</div>
+        </div>
+
+        <button class="nav-toggle" onclick="toggleNav()" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+            <span class="nav-toggle-label">
+                <span class="nav-current-page">Delete Account</span>
+            </span>
+            <span class="burger-icon" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </span>
+        </button>
+
+        <nav class="tabs" id="main-nav" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="tab-btn" onclick="closeNav()">Home</a>
+            <a href="coming-soon.html" class="tab-btn" onclick="closeNav()">What's Coming</a>
+            <a href="support.html" class="tab-btn" onclick="closeNav()">Support</a>
+            <a href="privacy.html" class="tab-btn" onclick="closeNav()">Privacy Policy</a>
+            <a href="terms.html" class="tab-btn" onclick="closeNav()">Terms (EULA)</a>
+        </nav>
+
+        <div class="content-card">
+            <h2>Delete Your Account</h2>
+            <div class="date">Last Updated: April 4, 2026</div>
+
+            <p>You can delete your LexiPro account and all associated data at any time. Account deletion is permanent
+                and cannot be undone.</p>
+
+            <h3>Option 1 — Delete from Inside the App (Recommended)</h3>
+            <p>The quickest way to delete your account is directly within the LexiPro app:</p>
+            <ol>
+                <li>Open the <strong>LexiPro</strong> app on your device.</li>
+                <li>Tap the <strong>Profile</strong> tab at the bottom of the screen.</li>
+                <li>Scroll down to the bottom of the page.</li>
+                <li>Tap <strong>Delete Account</strong>.</li>
+                <li>Confirm the deletion when prompted.</li>
+            </ol>
+            <p>Your account and all personal data will be permanently deleted within <strong>30 days</strong> of your
+                request.</p>
+
+            <h3>Option 2 — Request Deletion by Email</h3>
+            <p>If you no longer have access to the app, you can request account deletion by emailing us directly:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:manprachinbusiness@gmail.com">manprachinbusiness@gmail.com</a></li>
+                <li><strong>Subject:</strong> Account Deletion Request</li>
+                <li><strong>Include:</strong> The email address associated with your LexiPro account</li>
+            </ul>
+            <p>We will process your request within <strong>7 business days</strong> and confirm deletion by email.</p>
+
+            <h3>What Data Gets Deleted</h3>
+            <ul>
+                <li>Your account credentials (email, password hash)</li>
+                <li>Professional profile (profession, experience level)</li>
+                <li>All learning progress, streaks, and word review history</li>
+                <li>Notification preferences and app settings</li>
+            </ul>
+
+            <h3>What Is Not Deleted</h3>
+            <ul>
+                <li><strong>Subscription records:</strong> Transaction history is retained by RevenueCat and the
+                    relevant app store (Apple App Store / Google Play) in accordance with their policies and applicable
+                    law. We do not have the ability to delete these records on your behalf.</li>
+                <li><strong>Anonymised analytics:</strong> Aggregated, non-identifiable usage data may be retained for
+                    product improvement.</li>
+            </ul>
+
+            <h3>Active Subscriptions</h3>
+            <p>Deleting your account does <strong>not</strong> automatically cancel your subscription. To avoid future
+                charges, please cancel your subscription before deleting your account:</p>
+            <ul>
+                <li><strong>iOS:</strong> Settings → Apple ID → Subscriptions → LexiPro → Cancel</li>
+                <li><strong>Android:</strong> Google Play → Subscriptions → LexiPro → Cancel</li>
+            </ul>
+
+            <h3>Questions?</h3>
+            <p>If you have any questions about account deletion or your data, please contact us at
+                <a href="mailto:manprachinbusiness@gmail.com">manprachinbusiness@gmail.com</a>.
+            </p>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 LexiPro. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a> &middot;
+                <a href="support.html">Support</a></p>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleNav() {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.getElementById('navToggle');
+            const isOpen = nav.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        }
+        function closeNav() {
+            const nav = document.getElementById('main-nav');
+            const toggle = document.getElementById('navToggle');
+            nav.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    </script>
+
+</body>
+
+</html>
